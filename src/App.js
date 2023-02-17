@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import Dashbord from './components/Dashboard/Dashbord';
 import Header from './components/Header/Header';
 import Inventory from './components/Inventory/Inventory';
 import Login from './components/Login/Login';
@@ -26,6 +27,9 @@ function App() {
             </Route>
             <Route path="/review">
               <OrderReview></OrderReview>
+            </Route>
+            <Route path="/dashboard">
+              <Dashbord />
             </Route>
             <PrivateRoute path="/inventory">
               <Inventory></Inventory>
